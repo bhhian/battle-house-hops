@@ -185,6 +185,11 @@ h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
     padding: 16px 0;
 }
 
+.nav {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
 .nav-container {
     max-width: var(--container-max);
     margin: 0 auto;
