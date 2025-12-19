@@ -197,16 +197,10 @@ h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
-.logo-crest {
-    height: 55px;
-    width: auto;
-}
-
-.logo-name {
-    height: 40px;
+.logo-img {
+    height: 48px;
     width: auto;
 }
 
