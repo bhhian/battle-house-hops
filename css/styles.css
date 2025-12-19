@@ -182,6 +182,7 @@ h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     transition: background-color var(--transition-base);
+    padding: 16px 0;
 }
 
 .nav-container {
