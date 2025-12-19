@@ -486,8 +486,11 @@ h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
 
 .hop-image {
     position: relative;
-    height: 220px;
+    height: 400px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hop-image img {
@@ -1314,25 +1317,21 @@ h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
 
 .hops-resources {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: var(--spacing-md);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
     margin-top: var(--spacing-xl);
 }
 
 .resource-link {
-    padding: var(--spacing-sm) var(--spacing-lg);
-    background-color: var(--color-cream);
-    border-radius: var(--radius-md);
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 1rem;
     color: var(--color-primary);
-    transition: all var(--transition-base);
+    text-decoration: underline;
+    transition: color var(--transition-fast);
 }
 
 .resource-link:hover {
-    background-color: var(--color-primary);
-    color: var(--color-white);
+    color: var(--color-primary-dark);
 }
 
 /* Hops Growing Section */
