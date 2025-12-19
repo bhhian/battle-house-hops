@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle House Hops | Fresh. Local. Ontario Hops.</title>
+    <meta name="description" content="Fresh, quality, local Ontario hops. From farm to tap, we provide the freshest hops for craft breweries.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="/" class="logo">
+                    <img src="images/crest.png" alt="Battle House Hops Crest" class="logo-crest">
+                    <img src="images/name.png" alt="Battle House Hops" class="logo-name">
+                </a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hops.html">Our Hops</a></li>
+                    <li><a href="farm.html">The Farm</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Fresh, quality, local Ontario hops.</h1>
+            <p class="hero-subtitle">We're working to provide the freshest, best quality, local hops that you just can't get from suppliers warehouses.</p>
+            <a href="hops.html" class="btn btn-primary">Our Hops</a>
+        </div>
+        <div class="hero-scroll">
+            <svg class="scroll-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Farm Preview Section -->
+    <section id="about" class="farm-section">
+        <div class="container">
+            <div class="farm-grid">
+                <div class="farm-image">
+                    <img src="images/farm.jpg" alt="Battle House Hops Farm">
+                </div>
+                <div class="farm-content">
+                    <span class="section-label">Food Delivery</span>
+                    <h2 class="section-title">From Farm to Tap</h2>
+                    <p class="section-text">Our farm has some pretty unique history that we love to share. Come learn about its history and our plans to preserve it and build out our hops yard.</p>
+                    <a href="farm.html" class="btn btn-secondary">See The Farm</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hops Section -->
+    <section id="hops" class="hops-section">
+        <div class="container">
+            <h2 class="section-title centered">Our Hops</h2>
+            <p class="section-intro">Here are the hop varieties currently being farmed, harvested and packaged.</p>
+            
+            <div class="hops-grid">
+                <!-- Valley Cascade -->
+                <article class="hop-card">
+                    <div class="hop-image">
+                        <img src="images/cascade.png" alt="Valley Cascade Hops">
+                    </div>
+                    <div class="hop-content">
+                        <h3 class="hop-title">Valley Cascade</h3>
+                        <p class="hop-description">The hop that defined the American Pale Ale style. Cascade offers a great citrus grapefruit flavor and aroma. It's ideally used in late hop additions to maximize that bright flavor and aroma.</p>
+                        <a href="hops.html#cascade" class="hop-link">Learn more</a>
+                    </div>
+                </article>
+
+                <!-- Lanark Centennial -->
+                <article class="hop-card">
+                    <div class="hop-image">
+                        <img src="images/centennial.png" alt="Lanark Centennial Hops">
+                    </div>
+                    <div class="hop-content">
+                        <h3 class="hop-title">Lanark Centennial</h3>
+                        <p class="hop-description">Sometimes referred to as a "Super Cascade" because its aroma is somewhat like Cascade but has a higher bittering potential. Centennial is incredibly well-rounded and useful for bittering, flavor, aroma, and dry-hopping.</p>
+                        <a href="hops.html#centennial" class="hop-link">Learn more</a>
+                    </div>
+                </article>
+
+                <!-- Northern Galena -->
+                <article class="hop-card">
+                    <div class="hop-image">
+                        <img src="images/galena.png" alt="Northern Galena Hops">
+                    </div>
+                    <div class="hop-content">
+                        <h3 class="hop-title">Northern Galena</h3>
+                        <p class="hop-description">Galena is well known as a reliable, clean-bittering, high alpha hop. The clean-bittering of this hop works well as the base bittering palate for other more flavorful and aromatic hops.</p>
+                        <a href="hops.html#galena" class="hop-link">Learn more</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop CTA Section -->
+    <section id="shop-cta" class="shop-cta-section">
+        <div class="container">
+            <div class="shop-cta-content">
+                <h2 class="section-title centered">Shop Our Hops & Merch</h2>
+                <p class="section-intro">Browse our selection of fresh Ontario hops and Battle House merchandise.</p>
+                <a href="shop.html" class="btn btn-primary">Visit Shop</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title centered">Contact Us</h2>
+            <p class="section-intro">Get in touch with us for inquiries about our fresh Ontario hops.</p>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/crest.png" alt="Battle House Hops" class="footer-logo">
+                    <div class="footer-brand-text">
+                        <h3 class="footer-title">BATTLE HOUSE HOPS</h3>
+                        <p class="footer-tagline">Fresh. Local. Ontario Hops.</p>
+                    </div>
+                </div>
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="hops.html">Our Hops</a>
+                    <a href="farm.html">The Farm</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/battlehousehops/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/battlehousehops" target="_blank" rel="noopener noreferrer">
+                        <img src="images/facebook.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Battle House Hops. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "battle-house-hops",
+  "version": "1.0.0",
+  "description": "Battle House Hops - Fresh, Local, Ontario Hops",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server --port=3000"
+  },
+  "keywords": ["hops", "brewery", "ontario", "farm"],
+  "author": "Battle House Hops",
+  "license": "MIT"
+}
+
