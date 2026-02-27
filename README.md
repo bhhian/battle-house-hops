@@ -2,7 +2,7 @@
 
 **Fresh. Local. Ontario Hops.**
 
-**Live Site:** [https://bhhian.github.io/battle-house-hops/](https://bhhian.github.io/battle-house-hops/)
+**Live Site:** [https://battlehousehops.ca](https://battlehousehops.ca)
 
 A local recreation of the Battle House Hops website showcasing fresh, quality, local Ontario hops.
 
