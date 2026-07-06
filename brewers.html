@@ -4,172 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brewers | Battle House Hops</title>
-    <meta name="description" content="Pricing and availability for craft breweries. Fresh Ontario hops - Valley Cascade, Lanark Centennial, Northern Galena.">
+    <meta name="description" content="Pricing and availability for craft breweries. Fresh Ontario hops — Valley Cascade, Lanark Centennial, Northern Galena.">
     <meta name="robots" content="noindex, nofollow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <a href="index.html" class="logo">
-                    <img src="images/name.png" alt="Battle House Hops" class="logo-img">
-                </a>
-                <button class="mobile-menu-btn" aria-label="Toggle menu">
-                    <span class="hamburger"></span>
-                </button>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="hops.html">Our Hops</a></li>
-                    <li><a href="farm.html">The Farm</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+    <header class="site-nav">
+        <div class="site-nav__in">
+            <a href="index.html" class="brand">
+                <img src="images/crest.png" alt="">
+                <span class="brand__wm">Battle House Hops</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
     </header>
 
-    <!-- Brewers Hero -->
-    <section class="shop-hero">
-        <div class="shop-hero-content">
-            <h1 class="shop-hero-title">Brewers</h1>
-        </div>
-    </section>
+    <main>
+        <section class="page-head">
+            <div class="wrap"><h1>Brewers</h1></div>
+        </section>
 
-    <!-- Announcement Banner -->
-    <section class="shop-announcement">
-        <div class="container">
-            <div class="announcement-banner">
-                <span class="announcement-text">ALL 2025 STOCK IS SOLD OUT. PRE-ORDERS OPEN FOR 2026.</span>
+        <div class="announce">All 2025 stock is sold out — pre-orders open for 2026.</div>
+
+        <section class="section reveal">
+            <div class="wrap">
+                <div class="section-head"><h2>Why Buy Local</h2></div>
+                <p class="prose">We're here to help you craft the best brews with local Ontario hops — and your customers want to support local too. We'll help you tell that story and make sure people know you back the growers around you.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Why Buy Local -->
-    <section class="brewers-section">
-        <div class="container">
-            <div class="brewers-content-block">
-                <h2 class="section-title">Why buy local?</h2>
-                <p class="section-text">
-                    We're here to help you craft the best brews with local Ontario hops and we believe customers want and are willing to support local as well. We are here to help you create that story and make sure people know you support those around you.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing -->
-    <section class="brewers-pricing-section">
-        <div class="container">
-            <h2 class="section-title centered">Pricing</h2>
-            <p class="section-text centered">Prices are identical no matter the variety.</p>
-
-            <div class="brewers-price-cards">
-                <div class="brewers-price-card">
-                    <span class="brewers-price">$40</span>
-                    <span class="brewers-price-unit">1kg pellets</span>
+        <section class="section reveal">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Pricing</h2>
+                    <span>Same price, every variety</span>
                 </div>
-                <div class="brewers-price-card">
-                    <span class="brewers-price">$7</span>
-                    <span class="brewers-price-unit">1lb wet</span>
+                <div class="price-cards">
+                    <div class="price-card"><span class="price">$40</span><span class="price-unit">1&nbsp;kg pellets</span></div>
+                    <div class="price-card"><span class="price">$7</span><span class="price-unit">1&nbsp;lb wet</span></div>
+                </div>
+                <div class="avail-table-wrap">
+                    <table class="avail-table">
+                        <thead>
+                            <tr><th>Variety</th><th>2025 Results</th><th>Status</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Valley Cascade</strong></td><td>AA 4.9 · BA 6.4 · HSI 0.13</td><td><span class="status status--out">Sold Out</span></td></tr>
+                            <tr><td><strong>Lanark Centennial</strong></td><td>AA 10.9 · BA 3.2 · HSI 0.22</td><td><span class="status status--out">Sold Out</span></td></tr>
+                            <tr><td><strong>Northern Galena</strong></td><td>AA 9.8 · BA 7.6 · HSI 0.17</td><td><span class="status status--out">Sold Out</span></td></tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+        </section>
 
-            <!-- Availability Table -->
-            <div class="brewers-table-wrapper">
-                <table class="brewers-table">
-                    <thead>
-                        <tr>
-                            <th>Variety</th>
-                            <th>2025 Results</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Valley Cascade</strong></td>
-                            <td>AA: 4.9 &nbsp; BA: 6.4</td>
-                            <td><span class="brewers-status sold-out">Sold Out</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Lanark Centennial</strong></td>
-                            <td>AA: 10.9 &nbsp; BA: 3.2</td>
-                            <td><span class="brewers-status sold-out">Sold Out</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Northern Galena</strong></td>
-                            <td>AA: 9.8 &nbsp; BA: 7.6</td>
-                            <td><span class="brewers-status sold-out">Sold Out</span></td>
-                        </tr>
-                    </tbody>
-                </table>
+        <section class="contact reveal">
+            <div class="wrap">
+                <h2>Order today</h2>
+                <p>Reach out and we'll get you sorted for the 2026 harvest.</p>
+                <a href="mailto:ian@battlehousehops.ca" class="btn">Email us</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Order / Contact -->
-    <section class="brewers-order-section">
-        <div class="container">
-            <div class="brewers-order-content">
-                <h2 class="section-title centered">Order Today</h2>
-                <p class="section-text centered">Please reach out to us at <a href="mailto:ian@battlehousehops.ca" class="brewers-email">ian@battlehousehops.ca</a></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Logo Downloads -->
-    <section class="brewers-logo-section">
-        <div class="container">
-            <div class="brewers-logo-content">
-                <h2 class="section-title centered">Our Logo</h2>
-                <p class="section-text centered">If you need our logo for anything around social media or print, feel free to right-click and save them from here, or <a href="https://drive.google.com/file/d/1tyV_qY1bTgf7WQbW1pJUN39uZHSGdi0m/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="brewers-email">download all files from here</a>.</p>
-                <div class="brewers-logo-grid">
-                    <div class="brewers-logo-item">
-                        <img src="images/name.png" alt="Battle House Hops wordmark">
-                    </div>
-                    <div class="brewers-logo-item">
-                        <img src="images/crest.png" alt="Battle House Hops crest">
-                    </div>
+        <section class="section reveal">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Our Logo</h2>
+                    <span>For your taproom &amp; menus</span>
+                </div>
+                <p class="prose">Need our logo for social or print? Right-click and save below, or <a href="https://drive.google.com/file/d/1tyV_qY1bTgf7WQbW1pJUN39uZHSGdi0m/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="link-accent">download all the files here →</a></p>
+                <div class="logo-grid">
+                    <div class="logo-item"><img src="images/name.png" alt="Battle House Hops wordmark"></div>
+                    <div class="logo-item"><img src="images/crest.png" alt="Battle House Hops crest"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="images/crest.png" alt="Battle House Hops" class="footer-logo">
-                    <div class="footer-brand-text">
-                        <h3 class="footer-title">BATTLE HOUSE HOPS</h3>
-                        <p class="footer-tagline">Fresh. Local. Ontario Hops.</p>
-                    </div>
-                </div>
-                <nav class="footer-nav">
-                    <a href="index.html">Home</a>
-                    <a href="hops.html">Our Hops</a>
-                    <a href="farm.html">The Farm</a>
-                    <a href="shop.html">Shop</a>
-                    <a href="index.html#contact">Contact</a>
-                </nav>
-                <div class="footer-social">
-                    <a href="https://www.instagram.com/battlehousehops/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/instagram.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.facebook.com/battlehousehops" target="_blank" rel="noopener noreferrer">
-                        <img src="images/facebook.png" alt="Facebook">
-                    </a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Battle House Hops. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="site-footer__in">
+            <img class="brand-lockup" src="images/name.png" alt="Battle House Hops">
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/battlehousehops/" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/battlehousehops" target="_blank" rel="noopener noreferrer"><img src="images/facebook.png" alt="Facebook"></a>
             </div>
         </div>
+        <div class="footer-copy">&copy; 2026 Battle House Hops. All rights reserved.</div>
     </footer>
 
     <script src="js/main.js"></script>
