@@ -4,207 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop | Battle House Hops</title>
-    <meta name="description" content="Shop fresh Ontario hops and Battle House Hops merchandise. Valley Cascade, Lanark Centennial, Northern Galena, and apparel.">
+    <meta name="description" content="Shop fresh Ontario hops — Valley Cascade, Lanark Centennial, Northern Galena — plus Battle House apparel and accessories.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <a href="index.html" class="logo">
-                    <img src="images/name.png" alt="Battle House Hops" class="logo-img">
-                </a>
-                <button class="mobile-menu-btn" aria-label="Toggle menu">
-                    <span class="hamburger"></span>
-                </button>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="hops.html">Our Hops</a></li>
-                    <li><a href="farm.html">The Farm</a></li>
-                    <li><a href="shop.html" class="active">Shop</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+    <header class="site-nav">
+        <div class="site-nav__in">
+            <a href="index.html" class="brand">
+                <img src="images/crest.png" alt="">
+                <span class="brand__wm">Battle House Hops</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
     </header>
 
-    <!-- Shop Hero Section -->
-    <section class="shop-hero">
-        <div class="shop-hero-content">
-            <h1 class="shop-hero-title">Shop</h1>
-        </div>
-    </section>
+    <div class="announce">2025 harvest — sold out. Thank you for the support.</div>
 
-    <!-- Announcement Banner -->
-    <section class="shop-announcement">
-        <div class="container">
-            <div class="announcement-banner">
-                <span class="announcement-text">2025 HARVEST IS SOLD OUT! THANK YOU FOR YOUR SUPPORT.</span>
-            </div>
-        </div>
-    </section>
+    <main>
+        <section class="page-head">
+            <div class="wrap"><h1>Shop</h1></div>
+        </section>
 
-
-    <!-- Hops Products -->
-    <section id="hops-products" class="shop-products-section">
-        <div class="container">
-            <h2 class="section-title">Fresh Hops</h2>
-            <div class="products-grid">
-                <!-- Lanark Centennial -->
-                <a href="products/centennial.html" class="product-card-link">
-                    <article class="shop-product-card">
-                        <div class="shop-product-image">
-                            <img src="images/shop-centennial.png" alt="Lanark Centennial Hops">
-                        </div>
-                        <div class="shop-product-content">
-                            <h3 class="shop-product-title">Lanark Centennial</h3>
-                            <span class="shop-product-status coming-soon">Sold Out</span>
-                        </div>
-                    </article>
-                </a>
-
-                <!-- Valley Cascade -->
-                <a href="products/cascade.html" class="product-card-link">
-                    <article class="shop-product-card">
-                        <div class="shop-product-image">
-                            <img src="images/shop-cascade.png" alt="Valley Cascade Hops">
-                        </div>
-                        <div class="shop-product-content">
-                            <h3 class="shop-product-title">Valley Cascade</h3>
-                            <span class="shop-product-status coming-soon">Sold Out</span>
-                        </div>
-                    </article>
-                </a>
-
-                <!-- Northern Galena -->
-                <a href="products/galena.html" class="product-card-link">
-                    <article class="shop-product-card">
-                        <div class="shop-product-image">
-                            <img src="images/shop-galena-sold-out.png" alt="Northern Galena Hops - Sold Out">
-                        </div>
-                        <div class="shop-product-content">
-                            <h3 class="shop-product-title">Northern Galena</h3>
-                            <span class="shop-product-status coming-soon">Sold Out</span>
-                        </div>
-                    </article>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Apparel & Accessories -->
-    <section id="apparel" class="shop-products-section alt-bg">
-        <div class="container">
-            <h2 class="section-title">Apparel & Accessories</h2>
-            <div class="products-grid">
-                <!-- Artist Series Shirt -->
-                <a href="products/artist-shirt.html" class="product-card-link">
-                    <article class="shop-product-card">
-                        <div class="shop-product-image">
-                            <img src="images/shop-stickers.png" alt="Artist Series Shirt">
-                        </div>
-                        <div class="shop-product-content">
-                            <h3 class="shop-product-title">Artist Series: Shirt</h3>
-                            <span class="shop-product-status">View Details</span>
-                        </div>
-                    </article>
-                </a>
-
-                <!-- Shirt -->
-                <a href="products/shirt.html" class="product-card-link">
-                    <article class="shop-product-card">
-                        <div class="shop-product-image">
-                            <img src="images/shop-shirt.png" alt="Battle House Hops Shirt">
-                        </div>
-                        <div class="shop-product-content">
-                            <h3 class="shop-product-title">Shirt</h3>
-                            <span class="shop-product-status">View Details</span>
-                        </div>
-                    </article>
-                </a>
-
-                <!-- Department Shirt -->
-                <a href="products/dept-shirt.html" class="product-card-link">
-                    <article class="shop-product-card">
-                        <div class="shop-product-image">
-                            <img src="images/shop-dept-shirt.png" alt="Department Shirt">
-                        </div>
-                        <div class="shop-product-content">
-                            <h3 class="shop-product-title">Department Shirt</h3>
-                            <span class="shop-product-status">View Details</span>
-                        </div>
-                    </article>
-                </a>
-
-                <!-- Magnet -->
-                <a href="products/magnet.html" class="product-card-link">
-                    <article class="shop-product-card">
-                        <div class="shop-product-image">
-                            <img src="images/shop-magnet.png" alt="Battle House Hops Magnet">
-                        </div>
-                        <div class="shop-product-content">
-                            <h3 class="shop-product-title">Magnet</h3>
-                            <span class="shop-product-status">View Details</span>
-                        </div>
-                    </article>
-                </a>
-
-                <!-- Artist Series Stickers -->
-                <a href="products/stickers.html" class="product-card-link">
-                    <article class="shop-product-card">
-                        <div class="shop-product-image">
-                            <img src="images/shop-artist-shirt.png" alt="Artist Series Stickers">
-                        </div>
-                        <div class="shop-product-content">
-                            <h3 class="shop-product-title">Artist Series: Stickers</h3>
-                            <span class="shop-product-status">View Details</span>
-                        </div>
-                    </article>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="images/crest.png" alt="Battle House Hops" class="footer-logo">
-                    <div class="footer-brand-text">
-                        <h3 class="footer-title">BATTLE HOUSE HOPS</h3>
-                        <p class="footer-tagline">Fresh. Local. Ontario Hops.</p>
+        <section class="section reveal">
+            <div class="wrap">
+                <div class="shop-feature">
+                    <div class="shop-feature__pic"><img src="images/product.png" alt="Battle House Hops packaging"></div>
+                    <div class="shop-feature__body">
+                        <span class="kicker">Grown in Ontario</span>
+                        <h2>Fresh hops, packed on the farm.</h2>
+                        <p>Wet, pellet, and whole-leaf — grown, harvested, and packaged in Almonte. Watch this space for the 2026 harvest.</p>
+                        <a href="#hops" class="link-accent">See the varieties →</a>
                     </div>
                 </div>
-                <nav class="footer-nav">
-                    <a href="index.html">Home</a>
-                    <a href="hops.html">Our Hops</a>
-                    <a href="farm.html">The Farm</a>
-                    <a href="shop.html">Shop</a>
-                    <a href="index.html#contact">Contact</a>
-                </nav>
-                <div class="footer-social">
-                    <a href="https://www.instagram.com/battlehousehops/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/instagram.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.facebook.com/battlehousehops" target="_blank" rel="noopener noreferrer">
-                        <img src="images/facebook.png" alt="Facebook">
-                    </a>
+            </div>
+        </section>
+
+        <section class="section reveal" id="hops">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Fresh Hops</h2>
+                    <span>Tested yearly · adjusted to 10% moisture</span>
+                </div>
+                <div class="shop-hops">
+                    <article class="hop" id="cascade">
+                        <div class="hop__figure" data-variety="Valley Cascade">
+                            <img src="images/hop-cascade.jpg" alt="Valley Cascade hops" onerror="this.style.display='none'">
+                        </div>
+                        <div class="shop-hop__top">
+                            <h3 class="shop-hop__name">Valley Cascade</h3>
+                            <span class="status status--out">Sold Out</span>
+                        </div>
+                        <div class="nums">
+                            <div><span class="num__k">Alpha</span><span class="num__v">4.9</span></div>
+                            <div><span class="num__k">Beta</span><span class="num__v">6.4</span></div>
+                            <div><span class="num__k">HSI</span><span class="num__v">0.13</span></div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail__row"><b>Aroma</b>Citrus (grapefruit) and floral</div>
+                            <div class="detail__row"><b>Use</b>Dual-purpose — mostly aroma, some bittering</div>
+                            <div class="detail__row"><b>Available as</b>Wet hop, pellet, or whole leaf</div>
+                        </div>
+                    </article>
+
+                    <article class="hop" id="centennial">
+                        <div class="hop__figure" data-variety="Lanark Centennial">
+                            <img src="images/hop-centennial.jpg" alt="Lanark Centennial hops" onerror="this.style.display='none'">
+                        </div>
+                        <div class="shop-hop__top">
+                            <h3 class="shop-hop__name">Lanark Centennial</h3>
+                            <span class="status status--out">Sold Out</span>
+                        </div>
+                        <div class="nums">
+                            <div><span class="num__k">Alpha</span><span class="num__v">10.9</span></div>
+                            <div><span class="num__k">Beta</span><span class="num__v">3.2</span></div>
+                            <div><span class="num__k">HSI</span><span class="num__v">0.22</span></div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail__row"><b>Aroma</b>Pine, mild citrus, and floral</div>
+                            <div class="detail__row"><b>Use</b>Dual-purpose, high alpha — great for dry hopping</div>
+                            <div class="detail__row"><b>Available as</b>Wet hop, pellet, or whole leaf</div>
+                        </div>
+                    </article>
+
+                    <article class="hop" id="galena">
+                        <div class="hop__figure" data-variety="Northern Galena">
+                            <img src="images/hop-galena.jpg" alt="Northern Galena hops" onerror="this.style.display='none'">
+                        </div>
+                        <div class="shop-hop__top">
+                            <h3 class="shop-hop__name">Northern Galena</h3>
+                            <span class="status status--out">Sold Out</span>
+                        </div>
+                        <div class="nums">
+                            <div><span class="num__k">Alpha</span><span class="num__v">9.8</span></div>
+                            <div><span class="num__k">Beta</span><span class="num__v">7.6</span></div>
+                            <div><span class="num__k">HSI</span><span class="num__v">0.17</span></div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail__row"><b>Aroma</b>Peach, pear, citrus, blackcurrant</div>
+                            <div class="detail__row"><b>Use</b>Clean high-alpha bittering — early addition</div>
+                            <div class="detail__row"><b>Available as</b>Wet hop, pellet, or whole leaf</div>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Battle House Hops. All rights reserved.</p>
+        </section>
+
+        <!-- Apparel & Accessories added in Task 7 -->
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__in">
+            <img class="brand-lockup" src="images/name.png" alt="Battle House Hops">
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/battlehousehops/" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/battlehousehops" target="_blank" rel="noopener noreferrer"><img src="images/facebook.png" alt="Facebook"></a>
             </div>
         </div>
+        <div class="footer-copy">&copy; 2026 Battle House Hops. All rights reserved.</div>
     </footer>
 
     <script src="js/main.js"></script>
 </body>
 </html>
-
-
