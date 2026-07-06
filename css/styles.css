@@ -2,8 +2,8 @@
    Battle House Hops — "Fresh Cut" design system
    =========================================================== */
 :root{
-  --white:#faf8f3; --ink:#141414; --accent:#5f8226; --accent-bright:#9cbf5f;
-  --muted:#8a8a8a; --muted-2:#9a9a9a; --hair:#e4e0d6; --panel:#efece3;
+  --white:#faf8f3; --ink:#141414; --accent:#4c6a1c; --accent-bright:#9cbf5f;
+  --muted:#616161; --muted-2:#9a9a9a; --hair:#e4e0d6; --panel:#efece3;
   --font-display:'Space Grotesk',system-ui,sans-serif;
   --font-body:'Inter',system-ui,sans-serif;
   --wrap:1160px; --pad:clamp(20px,5vw,40px);
@@ -15,6 +15,7 @@ img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.02;letter-spacing:-.01em}
 [id]{scroll-margin-top:84px}
+a:focus-visible,button:focus-visible,.btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
 .wrap{max-width:var(--wrap);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
 .kicker{font:600 11px/1 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
@@ -59,12 +60,13 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.02;let
 .hop__figure{position:relative;aspect-ratio:1/1;background:var(--panel);overflow:hidden}
 .hop__figure::before{content:"";position:absolute;inset:0;background:url(../images/crest.png) center/38% no-repeat;opacity:.10}
 .hop__figure::after{content:attr(data-variety);position:absolute;left:0;right:0;bottom:16px;text-align:center;font:600 11px/1 var(--font-display);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.hop__figure.has-img::before,.hop__figure.has-img::after{content:none}
 .hop__figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .4s}
 .hop:hover .hop__figure img{transform:scale(1.03)}
 .hop__name{font-size:16px;text-transform:uppercase;letter-spacing:.03em;margin:14px 0 8px}
 .hop__flavor{font-size:13px;color:#555;margin-bottom:14px}
 .nums{display:flex;gap:20px;border-top:1px solid var(--hair);padding-top:12px}
-.num__k{display:block;font:500 9px/1 var(--font-body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted-2);margin-bottom:4px}
+.num__k{display:block;font:500 9px/1 var(--font-body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
 .num__v{font:600 16px/1 var(--font-display)}
 
 /* ---- farm ---- */
@@ -114,8 +116,8 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.02;let
 /* ---- status pill ---- */
 .status{display:inline-block;font:600 10px/1 var(--font-display);letter-spacing:.12em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
 .status--in{background:#e6efdc;color:#3f5c17}
-.status--low{background:#fbeecb;color:#8a6a12}
-.status--out{background:#eceae4;color:#8a8a8a}
+.status--low{background:#fbeecb;color:#6f540e}
+.status--out{background:#eceae4;color:#4d4d4d}
 
 /* ---- footer ---- */
 .site-footer{background:var(--ink);color:var(--white)}

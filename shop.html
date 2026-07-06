@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
@@ -18,8 +19,8 @@
                 <img src="images/crest.png" alt="">
                 <span class="brand__wm">Battle House Hops</span>
             </a>
-            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
-            <ul class="nav-links">
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html" class="active">Shop</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
@@ -57,7 +58,7 @@
                 <div class="shop-hops">
                     <article class="hop" id="cascade">
                         <div class="hop__figure" data-variety="Valley Cascade">
-                            <img src="images/hop-cascade.jpg" alt="Valley Cascade hops" onerror="this.style.display='none'">
+                            <img src="images/hop-cascade.jpg" alt="Valley Cascade hops" onerror="this.style.display='none'" onload="this.parentNode.classList.add('has-img')">
                         </div>
                         <div class="shop-hop__top">
                             <h3 class="shop-hop__name">Valley Cascade</h3>
@@ -77,7 +78,7 @@
 
                     <article class="hop" id="centennial">
                         <div class="hop__figure" data-variety="Lanark Centennial">
-                            <img src="images/hop-centennial.jpg" alt="Lanark Centennial hops" onerror="this.style.display='none'">
+                            <img src="images/hop-centennial.jpg" alt="Lanark Centennial hops" onerror="this.style.display='none'" onload="this.parentNode.classList.add('has-img')">
                         </div>
                         <div class="shop-hop__top">
                             <h3 class="shop-hop__name">Lanark Centennial</h3>
@@ -97,7 +98,7 @@
 
                     <article class="hop" id="galena">
                         <div class="hop__figure" data-variety="Northern Galena">
-                            <img src="images/hop-galena.jpg" alt="Northern Galena hops" onerror="this.style.display='none'">
+                            <img src="images/hop-galena.jpg" alt="Northern Galena hops" onerror="this.style.display='none'" onload="this.parentNode.classList.add('has-img')">
                         </div>
                         <div class="shop-hop__top">
                             <h3 class="shop-hop__name">Northern Galena</h3>
