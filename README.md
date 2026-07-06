@@ -48,23 +48,18 @@ Then visit [http://localhost:3000](http://localhost:3000)
 ## Project Structure
 
 ```
-cursor2/
-├── index.html          # Main HTML file
+battlehousehops/
+├── index.html          # Single-scroll home (hero, hops, farm, contact)
+├── shop.html           # Self-contained shop (fresh hops + apparel)
+├── brewers.html        # Standalone brewers page (unlinked)
 ├── css/
-│   └── styles.css      # All styles
+│   └── styles.css      # "Fresh Cut" design system
 ├── js/
-│   └── main.js         # JavaScript functionality
-├── images/
-│   ├── logo.svg        # Logo
-│   ├── favicon.svg     # Browser favicon
-│   ├── hero-bg.svg     # Hero background
-│   ├── farm.svg        # Farm section image
-│   ├── cascade.svg     # Valley Cascade hops
-│   ├── centennial.svg  # Lanark Centennial hops
-│   ├── galena.svg      # Northern Galena hops
-│   └── product.svg     # Product image
-├── package.json        # NPM configuration
-└── README.md           # This file
+│   └── main.js         # Mobile menu + scroll reveal
+├── images/             # Logo, photos, product & merch images
+├── CNAME               # Custom domain (battlehousehops.ca)
+├── package.json        # Dev-server helpers
+└── README.md
 ```
 
 ## Features
@@ -72,7 +67,6 @@ cursor2/
 - **Responsive Design** - Works on desktop, tablet, and mobile
 - **Smooth Animations** - Scroll animations and hover effects
 - **Mobile Navigation** - Hamburger menu for mobile devices
-- **Contact Form** - Form with validation (demo only)
 - **Modern CSS** - CSS variables, flexbox, and grid layouts
 
 ## Hop Varieties
