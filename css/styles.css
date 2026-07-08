@@ -144,9 +144,9 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:2px solid var(--
   .hero__media{min-height:46vh}
   .farm__media{min-height:260px}
   .nav-toggle{display:block}
-  .nav-links{position:fixed;inset:55px 0 auto 0;background:var(--white);flex-direction:column;gap:0;border-bottom:1px solid var(--hair);transform:translateY(-130%);transition:transform .28s;padding:8px var(--pad) 16px}
+  .nav-links{position:fixed;inset:55px 0 auto 0;background:var(--white);flex-direction:column;gap:0;border-bottom:1px solid var(--hair);transform:translateY(calc(-100% - 70px));transition:transform .28s;padding:8px var(--pad) 16px}
   .nav-links.open{transform:none}
-  .nav-links a{padding:14px 0;border-bottom:1px solid var(--hair)}
+  .nav-links a{display:block;padding:14px 0;border-bottom:1px solid var(--hair)}
 }
 
 /* ---- brewers page ---- */
