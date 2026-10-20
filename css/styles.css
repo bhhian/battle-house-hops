@@ -226,3 +226,14 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:2px solid var(--
 
 .farm-social__photo a{display:block;width:100%;height:100%}
 .farm-social__photo a:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+
+/* Keep the shop introduction close to the ordering information. */
+.shop-intro{padding-bottom:0}
+.shop-intro .shop-feature{padding-bottom:0}
+.shop-intro + #hops{padding-top:56px}
+#hops .purchase-info{margin-bottom:16px}
+.brewer-banner{display:flex;align-items:center;justify-content:space-between;gap:24px;background:#e6efdc;border:1px solid #cddcba;padding:24px;margin-bottom:48px}
+.brewer-banner h2{font-size:16px;margin-bottom:8px}
+.brewer-banner p{font-size:14px;color:#3f5c17;margin:0}
+.brewer-banner .btn{flex-shrink:0}
+@media(max-width:760px){.brewer-banner{flex-direction:column;align-items:flex-start;padding:20px;gap:16px}}
