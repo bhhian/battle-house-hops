@@ -16,6 +16,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Curated photos: swipe, keyboard scrolling, and optional arrow controls.
+  var photoTrack = document.getElementById('farm-photos');
+  if (photoTrack) {
+    var photoControls = document.querySelector('.farm-social__controls');
+    photoControls.hidden = false;
+    var photoButtons = photoControls.querySelectorAll('button');
+    function updatePhotoControls() {
+      photoButtons[0].disabled = photoTrack.scrollLeft <= 2;
+      photoButtons[1].disabled = photoTrack.scrollLeft + photoTrack.clientWidth >= photoTrack.scrollWidth - 2;
+    }
+    photoButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var card = photoTrack.querySelector('figure');
+        var step = card.getBoundingClientRect().width + parseFloat(getComputedStyle(photoTrack).gap);
+        photoTrack.scrollBy({left: step * Number(button.dataset.photoDirection), behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+      });
+    });
+    photoTrack.addEventListener('scroll', updatePhotoControls, {passive: true});
+    window.addEventListener('resize', updatePhotoControls);
+    updatePhotoControls();
+  }
+
   // Scroll reveal
   var revealables = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && revealables.length) {
