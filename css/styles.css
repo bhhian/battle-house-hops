@@ -102,6 +102,12 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:2px solid var(--
 .shop-feature__body h2{font-size:clamp(26px,4vw,36px);text-transform:uppercase;margin-bottom:14px}
 .shop-feature__body p{color:#555;max-width:38ch;margin-bottom:22px}
 .shop-hops{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,34px)}
+/* Share card row heights so purchase sections and details stay aligned. */
+@media(min-width:761px){
+  .shop-hops{row-gap:0}
+  .shop-hops > .hop{display:grid;grid-row:span 6;grid-template-rows:subgrid}
+  .shop-hops .buy > .btn{vertical-align:top}
+}
 .shop-hop__top{display:flex;align-items:center;justify-content:space-between;margin:14px 0 6px}
 .shop-hop__name{font-size:16px;text-transform:uppercase}
 .detail{margin-top:10px;border-top:1px solid var(--hair);padding-top:12px;display:grid;gap:8px}
@@ -118,6 +124,20 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:2px solid var(--
 .status--in{background:#e6efdc;color:#3f5c17}
 .status--low{background:#fbeecb;color:#6f540e}
 .status--out{background:#e3a900;color:#141414}
+
+/* ---- buy (PayPal) ---- */
+.buy{margin-top:10px;border-top:1px solid var(--hair);padding-top:14px}
+.buy__price{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+.buy--out .buy__price,.buy--out .buy__price .price-unit{color:var(--muted-2)}
+.buy__price .price{font:700 26px/1 var(--font-display)}
+.buy__price .price-unit{font:500 11px/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.buy__form{display:grid;justify-items:start;gap:10px}
+.buy .btn{width:100%}
+.buy .btn:disabled{background:var(--panel);border-color:var(--hair);color:var(--muted-2);cursor:not-allowed}
+.buy__powered{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--muted)}
+.buy__powered img{height:14px}
+.btn--sm{padding:9px 16px;font-size:11px}
+.section-head .btn{align-self:center}
 
 /* ---- footer ---- */
 .site-footer{background:var(--ink);color:var(--white)}
