@@ -51,9 +51,18 @@
 
         <section class="section reveal" id="hops">
             <div class="wrap">
+                <aside class="purchase-info" aria-label="Pickup, shipping, and payment information">
+                    <div class="purchase-info__body">
+                        <h2>Local pickup in Almonte, Ontario</h2>
+                        <p>Online purchases are for local pickup. For shipping, <a href="mailto:ian@battlehousehops.ca?subject=Hop%20shipping%20inquiry">please contact us</a> before ordering.</p>
+                    </div>
+                    <div class="purchase-info__payment">
+                        <img class="purchase-info__cards" src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="Accepted payment methods through PayPal">
+                        <span class="buy__powered">Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="PayPal"></span>
+                    </div>
+                </aside>
                 <div class="section-head">
-                    <h2>Fresh Hops</h2>
-                    <span>2026 harvest</span>
+                    <h2>2026 Hops</h2>
                 </div>
                 <div class="shop-hops">
                     <article class="hop" id="cascade">
@@ -68,9 +77,14 @@
                             <div><span class="num__k">Alpha</span><span class="num__v">7.3</span></div>
                             <div><span class="num__k">Beta</span><span class="num__v">8.8</span></div>
                         </div>
-                        <div class="buy buy--out" hidden>
-                            <p class="buy__price"><span class="price">$40</span><span class="price-unit">1&nbsp;kg pellets</span></p>
+                        <div class="buy buy--out">
+                            <p class="buy__price"><span class="price">$42</span><span class="price-unit">1&nbsp;kg pellets</span></p>
                             <button type="button" class="btn btn--solid" disabled>Sold out</button>
+                        </div>
+                        <div class="buy buy--preorder">
+                            <p class="buy__price"><span class="price">$7</span><span class="price-unit">1&nbsp;lb wet hops</span></p>
+                            <p class="buy__note">2027 harvest · Preorder only</p>
+                            <a class="btn" href="mailto:ian@battlehousehops.ca?subject=2027%20wet%20hop%20preorder%20%E2%80%94%20Valley%20Cascade" aria-label="Contact us to preorder Valley Cascade wet hops for 2027">Contact to preorder</a>
                         </div>
                         <div class="detail">
                             <div class="detail__row"><b>Aroma</b>Citrus (grapefruit) and floral</div>
@@ -99,9 +113,14 @@
                             <div><span class="num__k">Alpha</span><span class="num__v">10.2</span></div>
                             <div><span class="num__k">Beta</span><span class="num__v">8.5</span></div>
                         </div>
-                        <div class="buy buy--out" hidden>
-                            <p class="buy__price"><span class="price">$40</span><span class="price-unit">1&nbsp;kg pellets</span></p>
+                        <div class="buy buy--out">
+                            <p class="buy__price"><span class="price">$42</span><span class="price-unit">1&nbsp;kg pellets</span></p>
                             <button type="button" class="btn btn--solid" disabled>Sold out</button>
+                        </div>
+                        <div class="buy buy--preorder">
+                            <p class="buy__price"><span class="price">$7</span><span class="price-unit">1&nbsp;lb wet hops</span></p>
+                            <p class="buy__note">2027 harvest · Preorder only</p>
+                            <a class="btn" href="mailto:ian@battlehousehops.ca?subject=2027%20wet%20hop%20preorder%20%E2%80%94%20Lanark%20Centennial" aria-label="Contact us to preorder Lanark Centennial wet hops for 2027">Contact to preorder</a>
                         </div>
                         <div class="detail">
                             <div class="detail__row"><b>Aroma</b>Pine, mild citrus, and floral</div>
@@ -130,13 +149,16 @@
                             <div><span class="num__k">Alpha</span><span class="num__v">12.9</span></div>
                             <div><span class="num__k">Beta</span><span class="num__v">9.4</span></div>
                         </div>
-                        <div class="buy" hidden>
-                            <p class="buy__price"><span class="price">$40</span><span class="price-unit">1&nbsp;kg pellets</span></p>
+                        <div class="buy">
+                            <p class="buy__price"><span class="price">$42</span><span class="price-unit">1&nbsp;kg pellets</span></p>
                             <form class="buy__form" action="https://www.paypal.com/ncp/payment/8TAMEVU6B9MVY" method="post" target="_blank">
                                 <button type="submit" class="btn btn--solid">Buy now</button>
-                                <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="Accepted cards">
-                                <span class="buy__powered">Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="PayPal"></span>
                             </form>
+                        </div>
+                        <div class="buy buy--preorder">
+                            <p class="buy__price"><span class="price">$7</span><span class="price-unit">1&nbsp;lb wet hops</span></p>
+                            <p class="buy__note">2027 harvest · Preorder only</p>
+                            <a class="btn" href="mailto:ian@battlehousehops.ca?subject=2027%20wet%20hop%20preorder%20%E2%80%94%20Northern%20Galena" aria-label="Contact us to preorder Northern Galena wet hops for 2027">Contact to preorder</a>
                         </div>
                         <div class="detail">
                             <div class="detail__row"><b>Aroma</b>Peach, pear, citrus, blackcurrant</div>
@@ -156,41 +178,6 @@
             </div>
         </section>
 
-        <section class="section reveal" id="apparel">
-            <div class="wrap">
-                <div class="section-head">
-                    <h2>Apparel &amp; Accessories</h2>
-                    <span>Online store coming soon</span>
-                </div>
-                <div class="merch-grid">
-                    <article class="merch">
-                        <div class="merch__figure"><img src="images/shop-shirt.png" alt="Battle House Hops shirt"></div>
-                        <h3 class="merch__name">Shirt</h3>
-                        <span class="merch__meta">Coming soon</span>
-                    </article>
-                    <article class="merch">
-                        <div class="merch__figure"><img src="images/shop-dept-shirt.png" alt="Department shirt"></div>
-                        <h3 class="merch__name">Department Shirt</h3>
-                        <span class="merch__meta">Coming soon</span>
-                    </article>
-                    <article class="merch">
-                        <div class="merch__figure"><img src="images/shop-artist-shirt.png" alt="Artist Series shirt"></div>
-                        <h3 class="merch__name">Artist Series: Shirt</h3>
-                        <span class="merch__meta">Coming soon</span>
-                    </article>
-                    <article class="merch">
-                        <div class="merch__figure"><img src="images/shop-magnet.png" alt="Battle House Hops magnet"></div>
-                        <h3 class="merch__name">Magnet</h3>
-                        <span class="merch__meta">Coming soon</span>
-                    </article>
-                    <article class="merch">
-                        <div class="merch__figure"><img src="images/shop-stickers.png" alt="Artist Series stickers"></div>
-                        <h3 class="merch__name">Artist Series: Stickers</h3>
-                        <span class="merch__meta">Coming soon</span>
-                    </article>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="site-footer">

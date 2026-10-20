@@ -105,7 +105,7 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:2px solid var(--
 /* Share card row heights so purchase sections and details stay aligned. */
 @media(min-width:761px){
   .shop-hops{row-gap:0}
-  .shop-hops > .hop{display:grid;grid-row:span 6;grid-template-rows:subgrid}
+  .shop-hops > .hop{display:grid;grid-row:span 7;grid-template-rows:subgrid}
   .shop-hops .buy > .btn{vertical-align:top}
 }
 .shop-hop__top{display:flex;align-items:center;justify-content:space-between;margin:14px 0 6px}
@@ -133,6 +133,8 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:2px solid var(--
 .buy__price .price-unit{font:500 11px/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .buy__form{display:grid;justify-items:start;gap:10px}
 .buy .btn{width:100%}
+.buy__note{font-size:12.5px;color:var(--muted);line-height:1.6;margin-bottom:12px}
+.buy--preorder{margin-bottom:24px}
 .buy .btn:disabled{background:var(--panel);border-color:var(--hair);color:var(--muted-2);cursor:not-allowed}
 .buy__powered{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--muted)}
 .buy__powered img{height:14px}
@@ -198,3 +200,16 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:2px solid var(--
 .brewed__list{list-style:none;margin:0 0 12px;display:grid;gap:7px}
 .brewed__list li{font-size:12.5px;color:#555;line-height:1.45}
 .brewed__list li strong{font-family:var(--font-display);font-weight:600;color:var(--ink)}
+
+/* Purchase information shared by all varieties. */
+.purchase-info{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px;background:var(--panel);border:1px solid var(--hair);margin-bottom:32px}
+.purchase-info__body h2{font-size:16px;margin-bottom:8px}
+.purchase-info__body p{font-size:14px;color:var(--muted);margin:0;white-space:nowrap}
+.purchase-info__body a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.purchase-info__payment{display:grid;gap:10px;flex-shrink:0}
+.purchase-info__cards{display:block;width:140px;max-width:100%;height:auto}
+@media(max-width:760px){.purchase-info{flex-direction:column;align-items:flex-start;padding:20px}.purchase-info__payment{width:100%;max-width:240px}}
+
+.purchase-info__payment .buy__powered{font-size:10px}
+.purchase-info__payment .buy__powered img{height:12px}
+@media(max-width:1100px){.purchase-info{flex-wrap:wrap}.purchase-info__body p{white-space:normal}}
